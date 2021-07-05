@@ -5,15 +5,15 @@
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>Tesseract</PackageId>
-    <Authors>Charles Weld</Authors>
+    <PackageId>Tesseract-AVX2-x64</PackageId>
+    <Authors>Rcmcpe, Charles Weld</Authors>
     <Company />
     <Product>Tesseract</Product>
     <Description>Tesseract 4 adds a new neural net (LSTM) based OCR engine which is focused on line recognition, but also still supports the legacy Tesseract OCR engine of Tesseract 3 which works by recognizing character patterns. Compatibility with Tesseract 3 is enabled by using the Legacy OCR Engine mode (--oem 0). It also needs traineddata files which support the legacy engine, for example those from the tessdata repository.</Description>
     <Copyright>Copyright 2012-2020 Charles Weld</Copyright>
-    <PackageReleaseNotes>https://github.com/charlesw/tesseract/blob/master/ChangeLog.md</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/charlesw/tesseract/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/charlesw/tesseract/</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/CCRcmcpe/tesseract-dotnet-avx2-x64/blob/master/ChangeLog.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/CCRcmcpe/tesseract-dotnet-avx2-x64</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CCRcmcpe/tesseract-dotnet-avx2-x64</RepositoryUrl>
     <PackageTags>Tesseract Ocr</PackageTags>
     <Version>4.1.1</Version>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -51,10 +51,10 @@
     <CSFile Include="*.cs" Exclude="obj\**\.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="x64\**" Pack="true" PackageCopyToOutput="true" PackagePath="x64">
+    <Content Include="x64\*.dll" Pack="true" PackageCopyToOutput="true" PackagePath="x64">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tesseract.targets" Pack="true" PackageCopyToOutput="true" PackagePath="build/">
+    <Content Include="Tesseract-AVX2-x64.targets" Pack="true" PackageCopyToOutput="true" PackagePath="build/">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
