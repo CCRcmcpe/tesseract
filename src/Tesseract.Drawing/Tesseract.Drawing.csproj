@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Tesseract.Drawing</PackageId>
@@ -19,11 +19,7 @@
     <NeutralLanguage></NeutralLanguage>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <RootNamespace>Tesseract</RootNamespace>
-  </PropertyGroup>
-  <!-- .NET Standard 2.0 
-  references, compilation flags and build options -->
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
-    <DefineConstants>NETCORE;NETSTANDARD;NETSTANDARD2_0;SYSTEM_DRAWING_SUPPORT</DefineConstants>
+    <DefineConstants>SYSTEM_DRAWING_SUPPORT</DefineConstants>
   </PropertyGroup>
   
   <ItemGroup>
