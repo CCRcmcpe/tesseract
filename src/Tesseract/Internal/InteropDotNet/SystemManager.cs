@@ -5,11 +5,11 @@ using System;
 
 namespace InteropDotNet
 {
-    static class SystemManager
+    internal static class SystemManager
     {
         public static string GetPlatformName()
         {
-            return "x64";
+            return IntPtr.Size == sizeof(int) ? "x86" : "x64";
         }
 
         public static OperatingSystem GetOperatingSystem()
@@ -33,7 +33,7 @@ namespace InteropDotNet
         }
     }
 
-    enum OperatingSystem
+    internal enum OperatingSystem
     {
         Windows,
         Unix,

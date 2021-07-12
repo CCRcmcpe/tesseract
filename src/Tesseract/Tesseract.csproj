@@ -15,8 +15,8 @@
     <PackageProjectUrl>https://github.com/CCRcmcpe/tesseract-dotnet-avx2-x64</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CCRcmcpe/tesseract-dotnet-avx2-x64</RepositoryUrl>
     <PackageTags>Tesseract Ocr</PackageTags>
-    <Version>4.1.1</Version>
-    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <Version>4.1.1.1</Version>
+    <AssemblyVersion>4.1.1.1</AssemblyVersion>
     <NeutralLanguage></NeutralLanguage>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <DocumentationFile>.\Tesseract.xml</DocumentationFile>

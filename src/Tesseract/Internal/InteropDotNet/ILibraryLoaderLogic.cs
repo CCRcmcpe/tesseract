@@ -5,7 +5,7 @@ using System;
 
 namespace InteropDotNet
 {
-    interface ILibraryLoaderLogic
+    internal interface ILibraryLoaderLogic
     {
         IntPtr LoadLibrary(string fileName);
         bool FreeLibrary(IntPtr libraryHandle);
